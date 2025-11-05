@@ -3,7 +3,7 @@ from transformers import pipeline
 
 #login to huggingface, please copy your token
 from huggingface_hub import login
-login(token="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") #paste token anda di antara ""
+login(token="") #paste token anda di antara ""
 
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
 pipe = pipeline
@@ -36,4 +36,5 @@ while True:
 
     # Menampilkan hasil teks yang dihasilkan
     print("Generated Text:")
+
     print(outputs[0]["generated_text"])
